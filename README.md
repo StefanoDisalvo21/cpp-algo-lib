@@ -12,9 +12,9 @@
     -cpp-algo-lib
         -include/
             -algolib/
-                -All the headers file
+                -All the headers file with declarations and templated functions
         -src/
-            - All the source files
+            - All the source files (the ones without templated functions)
         -tests
             -Tests File
         -build (ignored)
