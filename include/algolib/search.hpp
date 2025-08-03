@@ -18,8 +18,6 @@ namespace algo_search{
     }
     template<typename T>
     int binary_search(vector<T>&vc,const T &target){
-        int index=-1;
-        bool found=false;
         if(is_sorted(vc)==false){
             throw invalid_argument("The Given Output is not sorted, please sort");
         }
