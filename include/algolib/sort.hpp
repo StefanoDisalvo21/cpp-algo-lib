@@ -8,11 +8,11 @@ namespace algo_sort{
     void bubble_sort(vector<T>&vc){
         for(size_t i=0;i<vc.size();++i){
             for(size_t j=0;j<vc.size()-i-1;++j){
-                auto x=vc[0];
+                auto swap_help=vc[0];
                 if(vc[j]>vc[j+1]){
-                    x=vc[j];
+                    swap_help=vc[j];
                     vc[j]=vc[j+1];
-                    vc[j+1]=x;
+                    vc[j+1]=swap_help;
                 }
             }
         }

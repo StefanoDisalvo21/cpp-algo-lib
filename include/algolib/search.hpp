@@ -13,17 +13,17 @@ namespace algo_search{
             throw invalid_argument("The Given Output is not sorted, please sort");
         }
         else{
-            int a=0, b=vc.size()-1;
-            while(a<=b){
-                int k=(a+b)/2;
-                if(vc[k]==target){
-                    return k;
+            int v_start=0, v_end=vc.size()-1;
+            while(v_start<=v_end){
+                int v_mid=(v_start+v_end)/2;
+                if(vc[v_mid]==target){
+                    return v_mid;
                 }
-                else if(vc[k]>target){
-                    b=k-1;
+                else if(vc[v_mid]>target){
+                    v_end=v_mid-1;
                 }
                 else{
-                    a=k+1;
+                    v_start=v_mid+1;
                 }
             }
         }
