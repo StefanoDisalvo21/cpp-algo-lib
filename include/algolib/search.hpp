@@ -1,24 +1,15 @@
 #include<vector>
 #pragma once
 #include "sort.hpp"
+#include "helper_functions.hpp"
 using namespace std;
 
 
 namespace algo_search{
     //binary search
     template<typename T>
-    //checking if array is sorted
-    bool is_sorted(vector<T>&vc){
-        for(size_t i=0;i<vc.size()-1;++i){
-            if(vc[i]>vc[i+1]){
-                return false;
-            }
-        }
-        return true;
-    }
-    template<typename T>
     int binary_search(vector<T>&vc,const T &target){
-        if(is_sorted(vc)==false){
+        if(helpers::is_sorted(vc)==false){
             throw invalid_argument("The Given Output is not sorted, please sort");
         }
         else{
