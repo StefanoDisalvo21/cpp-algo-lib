@@ -10,7 +10,7 @@ namespace algo_search{
     template<typename T>
     int binary_search(vector<T>&vc,const T &target){
         if(helpers::is_sorted(vc)==false){
-            throw invalid_argument("The Given Output is not sorted, please sort");
+            throw invalid_argument("The given input is not sorted");
         }
         else{
             int v_start=0, v_end=vc.size()-1;
