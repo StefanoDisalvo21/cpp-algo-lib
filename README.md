@@ -1,13 +1,11 @@
 ## This is a simple C++ algorithm library meant to learn Algorithms and Data Structure
 
 ## About this project
-This is the first project I started in the summer before my final year of High School.  
-I wanted to explore more advanced topics, but I soon realized that I needed to strengthen my mathematical and algorithmic foundations first.  
+    The project started in **August 2025** and is currently **paused**.  
+    An Algorithms library is the first thing I thought to do during the summer before my last High School year because I wanted to do more than all the other high school students but I encountered some difficulties that required me to go back to basis that as an High School student I do not have so I decided to pause it and take all the time to master all the basis. 
+    The repo will updated as soon as I learn new related concepts, meanwhile you can finde other active projects in my github account.
 
-The repository will be updated gradually as I learn new concepts.  
-The project started in **August 2025** and is currently **paused**.  
-
-Check the project status at STATUS.MD.
+    Check the project status at STATUS.MD
     
 
 ## Goals 🎯
