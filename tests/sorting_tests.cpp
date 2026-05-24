@@ -41,3 +41,22 @@ TEST(SelectionSort_Test, third_test){
     sorting_algorithms::selection_sort(vt);
     EXPECT_EQ(vt, (vector<int>{1,2,3,4}));
 }
+
+//quicksort test
+
+TEST(Quicksort_Test, first_test){
+    vector<int> vt{13,2,1,5};
+    sorting_algorithms::quicksort(vt,0,vt.size()-1);
+    EXPECT_EQ(vt, (vector<int>{1,2,5,13}));
+}
+TEST(Quicksort_Test, second_test){
+    vector<double> vt{3.2,2.4,1.25,1.22,-1};
+    sorting_algorithms::quicksort(vt,0,vt.size()-1);
+    EXPECT_EQ(vt, (vector<double>{-1,1.22,1.25,2.4,3.2}));
+}
+
+TEST(Quicksort_Test, third_test){
+    vector<int> vt{1,2,3,4};
+    sorting_algorithms::quicksort(vt,0,vt.size()-1);
+    EXPECT_EQ(vt, (vector<int>{1,2,3,4}));
+}
