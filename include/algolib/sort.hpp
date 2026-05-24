@@ -34,15 +34,15 @@ namespace sorting_algorithms{
     //quicksort
     template<typename T>
     int partitioning(vector<T>& vc, int start, int end){
-        int pivot = v[end];
+        int pivot = vc[end];
         int i= start-1;
-        for(int j=0;j<end;++j){
+        for(int j=start;j<end;++j){
             if(vc[j]<=pivot){
                 ++i;
                 swap(vc[i],vc[j]);
             }
         }
-
+        swap(vc[i+1],vc[end]);
         return (++i);
     }//end partitioning function
 
@@ -51,8 +51,8 @@ namespace sorting_algorithms{
         if(start<end){
             int partition = partitioning(vc,start,end);
 
-            quicksort(vc,start,part-1);
-            quicksort(vc,part+1,end);
+            quicksort(vc,start,partition-1);
+            quicksort(vc,partition+1,end);
         }
     }
 
