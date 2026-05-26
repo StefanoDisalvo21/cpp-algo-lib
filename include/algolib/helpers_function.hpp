@@ -10,8 +10,8 @@ namespace helpers_functions{
     template<typename T>
     bool is_sorted(vector<T>& vc){
         for(size_t i=0;i<vc.size()-1;++i){
-            if(vc[i]>v[i+1]){
-                return false
+            if(vc[i]>vc[i+1]){
+                return false;
             }
         }
         return true;
