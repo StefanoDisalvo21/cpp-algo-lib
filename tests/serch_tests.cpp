@@ -11,7 +11,7 @@ TEST(BS_Test,second_test){
     vector<int> vc = {1,2,3,4};
     EXPECT_EQ(searching_algorithms::binary_search(vc,5),-1);
 }
-TEST(BS_Test,this_thread){
+TEST(BS_Test,third_test){
     vector<int> vc = {1,9,2,3,5,6};
     EXPECT_THROW(searching_algorithms::binary_search(vc,9),invalid_argument);
 }
